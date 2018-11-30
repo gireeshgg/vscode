@@ -1,0 +1,32 @@
+td{
+border: 5px solid white;
+width: 150px;
+background-color: blue;
+text-align: center;
+block-size: 10em;
+}
+p{
+    display: none;
+    font-size: 50px;
+    font-weight: bold ;
+    font-family:sans-serif;
+    color: white;
+    
+}
+
+td:hover{
+background-color: #FFA601;
+}
+
+table{
+   
+    border: 5px solid white;
+}
+  
+div{
+    margin: 5em;
+   }
+
+body{
+       background-image: url("../img.jpg");
+   }

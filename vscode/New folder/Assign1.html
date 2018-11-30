@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Registration page</title>
+        <style>
+            form{
+                text-align: left;
+                width: 400px;
+                height: 100px;
+                padding-left: 38em;
+            }
+            label{
+                float: left;
+                width: 105;
+            }
+            div{
+                padding-left: 105px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="" onsubmit="myfunc()" name="Form1">
+            <fieldset>
+                <legend>User Details Confirmation</legend>
+            <label>Title :</label> <select name="Title : ">
+                <option value="Mr.">Mr.</option>>
+                <option value="Mrs.">Mrs.</option>
+            </select><br><br>
+            <label>FirstName:</label>  <input type = "text" name="FirstName" required><br><br>
+            <label>LastName :</label> <input type="text" name="LastName" required><br><br>
+            <label>Address       :</label> <input type="text" name="Address" required><br><br>
+            <label>City          :</label> <input type ="text" name="City" required><br><br>
+            <label>State         :</label>  <input type="text" name="State" required><br><br>
+            <label>Postal Code   :</label>  <input type="text" name="PostalCode" id="code" pattern="^([0-9]){6}" required><br><br>
+            <label>Country       :</label>  <input type="text" name="Country" required><br><br>
+            <label>Phone         :</label>  <input type="text" name="Phone" required><br><br>
+            <label>Fax           :</label>  <input type="text" name="Fax" required><br><br>
+            <label>Email         :</label>  <input type="email" name="Email" required><br><br>
+            <label>Payment By    :</label>  <input type="radio" name="Payment" required>PayPal<br>
+                                  <div><input type="radio" name="Payment">Manual Pay on Arrival</div>
+                                  <div><input type="radio" name="Payment">Credit Card</div><br><br>
+            <label>Any additional Requests :</label> <textarea name="Additional" cols="30" rows="5"></textarea><br><br>
+            <div><input type="checkbox" name ="check" required>I agree with <u>Terms and conditions</div></u><br><br>
+            <div><input type="submit" name="submit" value="Confirm & CheckOut" ></div>
+
+            </fieldset>
+        </form>
+        <script>
+            function myfunc()
+            {
+                var x = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9])+\.)+([a-zA-Z]{2,4})+$/;
+                if(!x.test(String(Form1.Email.value)))
+                {
+                    alert("Please enter a correct email address");
+                }
+            }
+        </script>
+    </body>
+</html>

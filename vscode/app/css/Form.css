@@ -1,0 +1,54 @@
+@charset "ISO-8859-1";
+legend{
+  text-align: center;
+}
+
+
+  h2{
+ 
+   color:#ffffff;
+	background-color :#0A4444;
+  }
+form
+{  
+  margin-left: 20em; 
+  margin-top: 20px; 
+  border: 2px solid white;
+  color:#ffffff;
+  width: 555px;
+  height: 100%;
+}
+
+#outer{
+  background-image : url('../img/img.jpg');
+  height: 99%;
+  width: 520px;
+ 
+}
+ 
+div{
+  padding-left: 31ex;
+}
+
+
+label{
+  float: left;
+  width: 220px;
+}
+
+a{
+color:#00dfdf;
+}
+
+body{
+  background-image: url('../img/img.jpg');
+  background-size: 100%;
+}
+
+textarea:hover, input[type="text"]:hover,input[type="number"]:hover {
+  background: #DFF65E;
+  }
+
+  input[type="submit"]:hover{
+    background: #73B3F4;
+  }

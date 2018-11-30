@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+favorite
+I have a set of text input boxes and right now while typing in them, the text being typed doesn't show up. Once a different part of the page is clicked, the text shows up, but not while the user is actually typing. Does anyone know what might be causing this?
+
+<form method="post" action="/contact" >
+    <ul class="contact">
+      <li>
+        <label for="name">Name</label>
+        {{ contact | contact_input: 'name' }}
+      </li>
+      <li>
+        <label for="email">Email</label>
+        {{ contact | contact_input: 'email' }}
+      </li>
+      <li>
+        <label for="subject">Subject</label>
+        {{ contact | contact_input: 'subject' }}
+      </li>
+      <li>
+        <label for="message">Message</label>
+        {{ contact | contact_input: 'message' }}
+      </li>
+      <li>
+        <label for="captcha">Spam check</label>
+        <div>
+          {{ contact | contact_input: 'captcha' }}
+          <div class="captcha_image">{{ contact.captcha }}</div>
+          <span>Please enter the characters from the image.</span>
+        </div>
+      </li>
+    </ul>
+    <button type="submit" name="submit" tabindex="6" title="Send us an email">Send</button>
+  </form>
+</body>
+</html>

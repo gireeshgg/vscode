@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>User Data Confirmation and Checkout Page</title>
+<link rel="stylesheet" type="text/css" href="css/Form.css"/>
+<script type="text/javascript" src="javascript/Script.js"></script>
+</head>
+<body>
+		<form name="valid"  onsubmit="return Validate();">
+			<fieldset id="outer">
+			
+				<legend>
+					<h2>User Details Confirmation and Checkout</h2>
+				</legend>
+
+				
+				 
+				<label >Title:</label>	
+				
+					<select>
+						<option value="Mr">Mr</option>
+						<option value="Mrs">Mrs</option>
+					</select>
+					<br><br>
+
+				<label>First name:</label>
+				
+					<input type="text" name="fname"    required  ><br><br>
+				
+				<label>Last name:</label>
+				
+					<input type="text" name="lname" ><br><br>
+					
+				<label>Address:</label>
+				
+					<input type="text" name="addre" required> <br><br>
+					
+				<label>City:</label>
+				
+					<input type="text" name="cityy" required>  <br><br>
+				
+				<label>State:</label>
+				
+					<input type="text" name="state" required> <br><br>
+				
+				<label>Postal Code:</label>
+				
+					<input type="number" name="postl" required> <br><br>
+				
+				<label>Country:</label>
+				
+					<input type="text" name="cntry" required> <br><br>
+				
+				<label>Phone:</label>
+				
+					<input type="number" name="phone" required> <br><br>
+				
+				<label id=sads>Fax:</label>
+			
+
+					<input type="number" name="faxes" > <br><br>
+				
+				<label>Email:</label>
+				
+					<input type="text" name="email" required> <br><br>
+				
+				<label>Payment by:</label>
+				<div>
+					<input  type="radio" name="payment" required>PayPal<br> 
+					<input  type="radio" name="payment" required >Manual: Pay on Arrival<br>
+					<input  type="radio" name="payment" required>Credit Card<br>
+				</div>
+				<br>
+				<label>Any additional requests:</label>
+				<div>
+					<textarea name="text" id="textareas" cols="30" rows="3"></textarea> <br>
+					<input  type="checkbox" name="checks" required> I agree with the 
+					<a href="#">Terms & Conditions </a>  <br>
+				</div>
+					<div id="done"> <input  type="submit" value="Check & Confirm" >
+						   
+					</div>
+
+				</form>
+			
+
+		</fieldset>
+	
+
+</body>
+</html>
